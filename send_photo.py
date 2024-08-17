@@ -18,6 +18,4 @@ def send_photo(chat_id: int, photo: str):
 
 
 chat_id = 86775091
-url = 'AgACAgQAAxkDAAII22a0X_ncnUvEyA5FyO46in4qXM5FAALltDEb0Wx9UY8z0lzlrnBqAQADAgADcwADNQQ'
 
-pprint(send_photo(chat_id, url))

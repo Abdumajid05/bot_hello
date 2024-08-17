@@ -14,10 +14,10 @@ def send_message(chat_id: int, text: str):
         chat_id (int): chat id
         text (str): text
     """
-    response = requests.get(URL, params={'chat_id': chat_id, 'text': text})
+    response = requests.post(URL, params={'chat_id': chat_id, 'text': text, 'parse_mode': 'MarkdownV2'})
     return response.json()
 
 chat_id = 86775091
-text = 'Hello, World!'
+text = '*Hello, World* from Python ||spoiler||'
 
-send_message(chat_id, text)
+print(send_message(chat_id, text))
